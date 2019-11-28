@@ -1,0 +1,79 @@
+/*Общие стили*/
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Bitter', serif;
+}
+a{
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  display:inline-block;
+  outline: none;
+}
+.link{
+  @media screen and (max-width: 768px) {
+    font-size:16px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size:14px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size:12px;
+  }
+  @media screen and (max-width: 370px) {
+    font-size:10.5px;
+  }
+}
+.visible-hidden{
+  @media screen and (max-width: 600px){
+    display:none;
+  }
+}
+.box{
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+nav{
+  display:flex;
+  align-items: center;
+}
+
+ul,li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+.yellow-text{
+  color:#FEE067;
+}
+.paragraph{
+  line-height: 24px;
+  color: #555555;
+  font-size: 16px;
+  font-family: $font-roboto;
+}
+.title{
+  margin-top:50px;
+  line-height:43px;
+  font-size:36px;
+  font-weight: 400;
+  text-align:center;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size:30px;
+    margin-top:20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size:18px;
+  }
+}

@@ -1,0 +1,65 @@
+%orange-button{
+  -webkit-border-radius:30px;
+  text-transform: uppercase;
+  border-width:0;
+  border-radius: 30px;
+  background: linear-gradient(to bottom,#FEE067 ,#FCBB73 100%);
+  width: 220px;
+  font-size: 17px;
+  color: $black;
+  text-align: center;
+  cursor: pointer;
+  line-height:50px;
+  position: relative;
+  box-shadow: 0px 9px 16px rgba(178,125,23,0.5);
+  &:hover{
+    background: #FCBB73;
+  }
+  &:focus{
+    outline:none;
+  }
+  @media screen and (max-width: 991px) {
+    width:200px;
+    font-size:16px;
+  }
+  &::after{
+    content:"";
+    background: url("../images/arrow.png") no-repeat;
+    position:absolute;
+    right:-70px;
+    top:-13px;
+    width:46px;
+    height:51px;
+    @media screen and (max-width: 480px) {
+      transform: rotate(-45deg);
+      width:30px;
+      height:33px;
+      background-size: contain;
+      right:-40px;
+      top:-20px;
+    }
+  }
+}
+
+%line-near-title{
+  content: "";
+  position: absolute;
+  height:3px;
+  width:60px;
+  top: 50%;
+  background-color: #25A1DD;
+}
+%text-with-roboto-300{
+  line-height: 24px;
+  font-size: 16px;
+  font-family: $font-roboto;
+  font-weight: 300;
+}
+%text-roboto-16px{
+  line-height: 24px;
+  color: #555555;
+  font-size: 16px;
+  letter-spacing: 0;
+  font-family: $font-roboto;
+  font-weight: 400;
+}
