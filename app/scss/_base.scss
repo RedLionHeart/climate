@@ -38,6 +38,15 @@ a{
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  @media screen and (max-width: 1199px){
+    max-width: 992px;
+  }
+  @media screen and (max-width: 991px){
+    max-width:768px;
+  }
+  @media screen and (max-width: 768px){
+    max-width:100%;
+  }
 }
 nav{
   display:flex;
@@ -61,6 +70,10 @@ img{
   color: #555555;
   font-size: 16px;
   font-family: $font-roboto;
+  @media screen and (max-width: 480px) {
+    font-size:14px;
+    line-height: 18px;
+  }
 }
 .title{
   margin-top:50px;
@@ -74,6 +87,19 @@ img{
     margin-top:20px;
   }
   @media screen and (max-width: 480px) {
-    font-size:18px;
+    font-size:20px;
+    line-height: 28px;
+  }
+}
+.subtitle{
+  line-height: 27px;
+  color: #555555;
+  font-size: 18px;
+  text-align: center;
+  font-family: $font-roboto;
+  margin:0;
+  @media screen and (max-width: 480px) {
+    font-size:14px;
+    line-height: 22px;
   }
 }

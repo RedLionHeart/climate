@@ -45,7 +45,32 @@
 
 })();
 
+(function () {
+    var width = window.innerWidth || document.body.clientWidth;
 
+    if(768 > width ) {
+        var elementNeedDelete = document.querySelectorAll('.vertical-blue-line');
+        elementNeedDelete.forEach(function (it) {
+            it.remove();
+        });
+        $('.statistic-block').slick({
+            infinite:false,
+            autoplay:true,
+            autoplaySpeed: 5000,
+            prevArrow: $('.prev-arrow-statistic'),
+            nextArrow: $('.next-arrow-statistic'),
+        });
+    }
+
+    if(768 > width){
+        $('.reviews-block').slick({
+            infinite:false,
+            prevArrow: $('.prev-arrow-review'),
+            nextArrow: $('.next-arrow-review'),
+        });
+    }
+
+})();
 
 
 
